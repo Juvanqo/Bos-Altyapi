@@ -97,3 +97,10 @@ client.elevation = message => {
     if (message.author.id === ayarlar.sahip) permlvl = 4;
     return permlvl;
 };
+
+client.on('ready', ()=>{
+    client.channels.cache.get('KANAL ID').join() // SES KANALI ID'Sİ GİRMEYİ UNUTMAYIN
+    }) 
+
+
+client.login(ayarlar.token)
